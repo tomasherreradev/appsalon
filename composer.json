@@ -1,0 +1,23 @@
+{
+    "name": "54382/app-salon_php_mvc_js_sass",
+    "description": "Proyecto en PHP 8 con MVC",
+    "type": "proyect",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Model\\" : "./models",
+            "Controller\\" : "./controllers",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tomi",
+            "email": "herreratomas270@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
