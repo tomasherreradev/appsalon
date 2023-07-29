@@ -6,7 +6,7 @@
 
 <form action="/" method="POST" class="formulario">
     <div class="campo">
-        <label for="email">Email: </label>
+        <label class="label-campo" for="email">Email: </label>
         <input 
         type="email"
         id="email"
@@ -16,13 +16,13 @@
     </div>
 
     <div class="campo">
-        <label for="password">Password</label>
+        <label class="label-campo" for="password">Password</label>
         <input 
         type="password" 
         name="password" 
         placeholder="Ingresar contraseña"
         id="password">
-    </div>
+    </div>          
 
     <input type="submit" class="boton" value="Iniciar sesión">
 
