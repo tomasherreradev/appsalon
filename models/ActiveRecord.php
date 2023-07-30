@@ -74,11 +74,19 @@ class ActiveRecord {
     public function sanitizarAtributos() {
         $atributos = $this->atributos();
         $sanitizado = [];
-        foreach($atributos as $key => $value ) {
-            $sanitizado[$key] = self::$db->escape_string($value);
+        foreach ($atributos as $key => $value) {
+            // Verificar si $value es nulo antes de pasar a escape_string()
+            if ($value === null) {
+                // Decide qué hacer en caso de valor nulo, por ejemplo, asignar un valor predeterminado:
+                $sanitizado[$key] = ''; // O cualquier valor predeterminado que desees
+            } else {
+                // Llamar a escape_string() solo si $value no es nulo
+                $sanitizado[$key] = self::$db->escape_string($value);
+            }
         }
         return $sanitizado;
     }
+    
 
     // Sincroniza BD con Objetos en memoria
     public function sincronizar($args=[]) { 
