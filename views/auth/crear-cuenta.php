@@ -5,7 +5,7 @@
 
 <form action="/crear-cuenta" method="POST" class="formulario">
     <div class="campo">
-        <label for="nombre">Nombre</label>
+        <label class="label-campo" for="nombre">Nombre</label>
         <input 
         type="text" 
         id="nombre"
@@ -15,7 +15,7 @@
     </div>
 
     <div class="campo">
-        <label for="apellido">Apellido</label>
+        <label class="label-campo" for="apellido">Apellido</label>
         <input 
         type="text" 
         id="apellido"
@@ -25,7 +25,7 @@
     </div>
 
     <div class="campo">
-        <label for="telefono">Telefono</label>
+        <label class="label-campo" for="telefono">Telefono</label>
         <input 
         type="tel" 
         id="telefono"
@@ -35,7 +35,7 @@
     </div>
 
     <div class="campo">
-        <label for="email">Email</label>
+        <label class="label-campo" for="email">Email</label>
         <input 
         type="email" 
         id="email"
@@ -45,7 +45,7 @@
     </div>
 
     <div class="campo">
-        <label for="password">Password</label>
+        <label class="label-campo" for="password">Password</label>
         <input 
         type="password" 
         id="password"
